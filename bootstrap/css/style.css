@@ -1,0 +1,25 @@
+.menu-lu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu-lu li{
+    float: right;
+    width: 100px;
+}
+.menu-lu li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 48px;
+    padding-top: 10px;
+    /*background-color: #5a6268;*/
+    box-sizing: border-box;
+    color: #7abaff;
+    font-weight: bold;
+    transition: 1s;
+}
+.menu-lu li a:hover{
+   background-color: #b193ff;
+    color: #1b1e21;
+}

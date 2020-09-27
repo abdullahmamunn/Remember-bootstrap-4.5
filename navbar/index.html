@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+   <div class="container">
+       <a href="" class="navbar-brand">
+           <img src="src/logo.jpg" alt="" style="height: 50px;">
+       </a>
+       <button type="button" class="navbar-toggler" data-target="#main-menu" data-toggle="collapse">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">About</a></li>
+                <li><a href="" class="nav-link">Contact</a></li>
+                <li class="dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                   <ul class="dropdown-menu bg-primary">
+                        <li><a href="" class="nav-link">Link One</a></li>
+                        <li><a href="" class="nav-link">Link Two</a></li>
+                        <li><a href="" class="nav-link">Link Three</a></li>
+                   </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li><a href="" class="nav-link" data-target="#login-modal" data-toggle="modal">Login</a></li>
+                <li><a href="" class="nav-link" data-target="#signup-modal" data-toggle="modal">Sign up</a></li>
+            </ul>
+       </div>
+   </div>
+</nav>
+
+  <div class="carousel slide" data-ride="carousel" data-interval="2000" id="main-slide">
+     <ol class="carousel-indicators">
+         <li data-target="#main-slide" data-slide-to="0"></li>
+         <li data-target="#main-slide" data-slide-to="1"></li>
+         <li data-target="#main-slide" data-slide-to="2"></li>
+         <li data-target="#main-slide" data-slide-to="3"></li>
+         <li data-target="#main-slide" data-slide-to="4" class="active"></li>
+     </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item">
+              <img src="../src/slider-1.jpg" alt="" class="w-100" height="500">
+              <div class="carousel-caption">
+                  <h1>The beautiful world!</h1>
+                  <p>I wanna travel all beautiful places over the world!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../src/slide.jpg" alt="" class="w-100" height="500">
+              <div class="carousel-caption">
+                  <h1>The beautiful world!</h1>
+                  <p>I wanna travel all beautiful places over the world!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../src/slider-3.jpg" alt="" class="w-100" height="500">
+              <div class="carousel-caption">
+                  <h1>The beautiful world!</h1>
+                  <p>I wanna travel all beautiful places over the world!</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../src/slider-4.jpg" alt="" class="w-100" height="500">
+              <div class="carousel-caption">
+                  <h1>The beautiful world!</h1>
+                  <p>I wanna travel all beautiful places over the world!</p>
+              </div>
+          </div>
+          <div class="carousel-item active">
+              <img src="../src/slider-5.jpg" alt="" class="w-100" height="500">
+              <div class="carousel-caption">
+                  <h1>The beautiful world!</h1>
+                  <p>I wanna travel all beautiful places over the world!</p>
+              </div>
+          </div>
+      </div>
+      <a href="#main-slide" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#main-slide" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+<div class="container-fluid">
+<!--    <button type="button" class="btn btn-dark" data-target="#modal" data-toggle="modal">Click me!</button>-->
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Login Form</h2>
+                    <button type="button" class="close" data-dismiss="modal">&Cross;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-success btn-block">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signup-modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Sign Up Form</h2>
+                    <p>Please Fill up the from to create a new account</p>
+                    <button type="button" class="close" data-dismiss="modal">&Cross;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="">First Name</label>
+                                    <input class="form-control" type="text" name="first_name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="">Last Name</label>
+                                    <input class="form-control" type="text" name="last_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-success btn-block">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../src/coxs1.jpg" alt="" class="card-img-top">
+                <div class="card-header">
+                    <h4>Cox's Bazar is the most beautiful place</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum cupiditate debitis deleniti deserunt,
+                        earum eligendi facilis fuga illo, itaque maxime mollitia nostrum recusandae saepe similique veniam vero voluptas!</p>
+                    <button type="button" class="btn btn-success">Read more..</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../src/longest-sea.jpg" alt="" class="card-img-top">
+                <div class="card-header">
+                    <h4>Cox's Bazar is the most beautiful place</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum cupiditate debitis deleniti deserunt,
+                        earum eligendi facilis fuga illo, itaque maxime mollitia nostrum recusandae saepe similique veniam vero voluptas!</p>
+                    <button class="btn btn-success">Read more...</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../src/coxsbazar.jpg" alt="" class="card-img-top">
+                <div class="card-header">
+                    <h4>Cox's Bazar is the most beautiful place</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum cupiditate debitis deleniti deserunt,
+                        earum eligendi facilis fuga illo, itaque maxime mollitia nostrum recusandae saepe similique veniam vero voluptas!</p>
+                    <button class="btn btn-success">Read More..</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../src/coxsba.jpg" alt="" class="card-img-top">
+                <div class="card-header">
+                    <h4>Cox's Bazar is the most beautiful place</h4>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum cupiditate debitis deleniti deserunt,
+                        earum eligendi facilis fuga illo, itaque maxime mollitia nostrum recusandae saepe similique veniam vero voluptas!</p>
+                    <button class="btn btn-success">Read More...</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<section class="add-section">
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item-padding active">
+                    <h3>Travel quotes...</h3>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY A PAGE.”</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">SAINT AUGUSTINE</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item carousel-item-padding">
+                    <h3>Travel quotes...</h3>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS”</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">CHIEF SEATTLE</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item carousel-item-padding">
+                    <h3>Travel quotes...</h3>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">TRAVEL IS  FATAL TO PREJUDICE, BIGOTRY, AND NARROW MINDEDNESS, AND MANY OF OUR PEOPLE NEED IT SORELY ON THESE ACCOUNTS.”</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">MARK TWAIN</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item carousel-item-padding">
+                    <h3>Travel quotes...</h3>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">THE REAL VOYAGE OF DISCOVERY CONSISTS NOT IN SEEKING NEW LANDSCAPES, BUT IN HAVING NEW EYES.”</p>
+                        <footer class="blockquote-footer"><cite title="Source Title">MARCEL PROUST</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/popper.js/dist/popper.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
